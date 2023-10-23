@@ -1,6 +1,6 @@
-# Java语言版本的openAPI SDK实现
+# openAPI SDK For Java
 
-## 依赖
+## Maven dependency
 ```xml
      <dependency>
         <groupId>com.zhikan</groupId>
@@ -9,7 +9,7 @@
     </dependency>
 ```
 
-## 指定配置
+## Custom LigaConfig
 ```java
     LigaConfig ligaConfig = new LigaConfig();
     ligaConfig.setMethodsEndpointUrlPrefix("https://pre.leiga.net/openapi/api/");
@@ -19,12 +19,12 @@
 
 ```
 
-## 默认配置
+## Use Default LigaConfig
 ```java
     Liga liga = Liga.getInstance();
 ```
 
-## 简单示例
+## Simple Demo
 ```java
         LigaConfig ligaConfig = new LigaConfig();
         ligaConfig.setLibraryMaintainerMode(false);
@@ -47,5 +47,5 @@
 ```
 
 
-## openAPI相关接口文档
+## openAPI Doc link
 https://apifox.com/apidoc/shared-8af53dca-b5fd-4de4-bc89-9a83f5444dae
